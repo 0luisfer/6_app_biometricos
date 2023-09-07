@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reconocimiento facial</title>
+</head>
+<body>
+    <h1>bienvenido al reconocimiento facial </h1>
+    <form action="#" method="POST" enctype="multipart/form-data">
+
+        {% csrf_token %}
+        {{ form.as_table }}
+
+        <input type="submit" value="upload">
+
+    </form>    
+</body>
+</html>
